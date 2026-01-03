@@ -1,80 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ваше Сообщение</title>
+    <title>ВЕРИФИКАЦИЯ</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body { 
             font-family: Arial, sans-serif; 
-            margin: 20px; 
-            display: flex; /* Для центрирования */
-            flex-direction: column; /* Элементы будут друг под другом */
-            align-items: center; /* Центрирование по горизонтали */
+            margin: 40px; 
+            text-align: center; /* Центрируем все содержимое */
+            line-height: 1.5; /* Увеличиваем межстрочный интервал */
+        }
+
+        /* Стиль для заголовков полей */
+        .label {
+            font-weight: bold;
+            display: block; /* Заголовки с новой строки */
+            margin-top: 20px; /* Отступ сверху */
+            margin-bottom: 0; /* Убираем лишний отступ снизу */
         }
         
-        /* Стиль для таблицы */
-        .verification-table {
-            margin-top: 30px;
-            width: 500px; /* Фиксированная ширина таблицы */
-            border-collapse: collapse; /* Убирает двойные границы */
-        }
-        
-        /* Стиль для строк таблицы */
-        .verification-table tr {
-            height: 35px; /* Высота строки */
-        }
-        
-        /* Стиль для ячеек-заголовков (левая колонка) */
-        .verification-table td:first-child {
-            font-weight: bold; /* Жирный шрифт для заголовков */
-            text-align: left; /* Текст слева */
-        }
-        
-        /* Стиль для ячеек-значений (правая колонка) */
-        .verification-table td:last-child {
-            text-align: right; /* Текст справа */
-            padding-left: 20px;
+        /* Стиль для значений полей */
+        .value {
+            font-weight: normal; /* Обычный шрифт для значений */
+            display: block;
+            margin-top: 0; /* Убираем лишний отступ сверху */
+            margin-bottom: 0; /* Убираем лишний отступ снизу */
         }
     </style>
 </head>
 <body>
 
-    <table class="verification-table">
-        <tr>
-            <td>Name of the training course:</td>
-            <td>Advanced fire fighting</td>
-        </tr>
-        <tr>
-            <td>Number of the certificate:</td>
-            <td>03755/2025</td>
-        </tr>
-        <tr style="height: 15px;"></tr> 
+    <p class="label">Name of the training course:</p>
+    <p class="value">Advanced fire fighting</p>
 
-        <tr>
-            <td>Family, given names of the trainee:</td>
-            <td>Aarian Bohomolov</td>
-        </tr>
-        <tr>
-            <td>Date of birth of the trainee:</td>
-            <td>2006-04-04</td>
-        </tr>
-        <tr>
-            <td>ID number of the trainee:</td>
-            <td>891331</td>
-        </tr>
+    <p class="label">Number of the certificate:</p>
+    <p class="value">03755/2025</p>
+    
+    <br>
 
-        <tr style="height: 15px;"></tr> 
-        
-        <tr>
-            <td>Date of issue:</td>
-            <td>2025-11-27</td>
-        </tr>
-        <tr>
-            <td>Date of expire:</td>
-            <td>2030-11-27</td>
-        </tr>
-    </table>
+    <p class="label">Family, given names of the trainee:</p>
+    <p class="value">Aarian Bohomolov</p>
+
+    <p class="label">Date of birth of the trainee:</p>
+    <p class="value">2006-04-04</p>
+
+    <p class="label">ID number of the trainee:</p>
+    <p class="value">891331</p>
+    
+    <br>
+
+    <p class="label">Date of issue:</p>
+    <p class="value">2025-11-27</p>
+
+    <p class="label">Date of expire:</p>
+    <p class="value">2030-11-27</p>
 
 </body>
 </html>
